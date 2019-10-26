@@ -6,12 +6,12 @@ import Search from './components/containers/Search';
 
 const routing = (
     <Router>
-        <div>
-            <ul>
-                <li>
+        <div className='container-fluid'>
+            <ul className="list-group list-group-horizontal">
+                <li className="list-group-item">
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className="list-group-item"> 
                     <Link to="/search">Search</Link>
                 </li>
             </ul>

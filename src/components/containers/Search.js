@@ -37,6 +37,7 @@ class Search extends React.Component {
                 <form onSubmit={this.getImage}>
                     <input className="searchInput" type="text" placeholder="Search.." onChange={event => this.handleSearchInput(event)}/>
                     <button className="searchSubmit" type='submit'>Search</button>
+                    <br/>
                     <Results results={this.state.results}/>
                 </form>
             </div>
