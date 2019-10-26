@@ -2,6 +2,11 @@ import React from 'react';
 import axios from 'axios';
 import Results from './Results';
 
+/**
+ * The Search component container 
+ *
+ * @visibleName Search
+ */
 class Search extends React.Component {
     state = {
         query: '',

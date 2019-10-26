@@ -1,6 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
+/**
+ * The Home compnent container.
+ *
+ * @visibleName Home
+ */
 class Home extends React.Component {
     state = {
         results:[]

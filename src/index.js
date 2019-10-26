@@ -4,6 +4,10 @@ import { Route, Link, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/containers/Home';
 import Search from './components/containers/Search';
 
+/**
+ * The Main container which handles all Routing between pages
+ *
+ */
 const routing = (
     <Router>
         <div className='container-fluid flex-column flex-sm-row'>
