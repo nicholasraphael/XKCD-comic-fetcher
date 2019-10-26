@@ -1,0 +1,13 @@
+.results {
+    padding-top: 5em;
+    align-self: center;
+}
+
+.search {
+    position: relative;
+    margin-left: 10px;
+}
+
+.nav {
+    padding-bottom: 40px;
+}

@@ -17,9 +17,7 @@ class Search extends React.Component {
                     results: data
                 })
             });
-        } else {
-            return <p>INVALID RANGE</p>
-        }
+        } 
         
         event.preventDefault()
     }
@@ -32,13 +30,15 @@ class Search extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className='container-fluid'>
                 <h1>Search</h1>
-                <form onSubmit={this.getImage}>
+                <form onSubmit={this.getImage}> 
                     <input className="searchInput" type="text" placeholder="Search.." onChange={event => this.handleSearchInput(event)}/>
                     <button className="searchSubmit" type='submit'>Search</button>
                     <br/>
-                    <Results results={this.state.results}/>
+                    <div className="results">
+                        <Results results={this.state.results}/>
+                    </div>
                 </form>
             </div>
         );

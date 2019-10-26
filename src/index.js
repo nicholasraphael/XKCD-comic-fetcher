@@ -6,14 +6,18 @@ import Search from './components/containers/Search';
 
 const routing = (
     <Router>
-        <div className='container-fluid'>
-            <ul className="list-group list-group-horizontal">
-                <li className="list-group-item">
-                    <Link to="/">Home</Link>
-                </li>
-                <li className="list-group-item"> 
-                    <Link to="/search">Search</Link>
-                </li>
+        <div className='container-fluid flex-column flex-sm-row'>
+            <ul className="nav nav-pills">
+                <button className="nav-item btn btn-light">
+                    <li className="latest">
+                        <Link to="/">Latest</Link>
+                    </li>
+                </button>
+                <button className="nav-item btn btn-light">
+                    <li className="search"> 
+                        <Link to="/search">Search</Link>
+                    </li>
+                </button>
             </ul>
             <Switch>
                 <Route exact path='/' component={Home}/>
